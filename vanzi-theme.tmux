@@ -2,13 +2,12 @@
 
 export VANZI_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-bg_transparent="$(tmux show-option -gqv "@bg_transparent")"
-
 main() {
   spacer=" "
   window_inner_spacer="."
   window_inner_separator="."
   variant="$(tmux show-option -gqv "@theme_variant")"
+  bg_transparent="$(tmux show-option -gqv "@bg_transparent")"
   padding=" "
 
   if [[ "$variant" == "ivory" ]]; then
@@ -19,7 +18,7 @@ main() {
     c_text_m="#414141"
     c_text_h="#000000"
     c_punk_main="#ef6461"
-    c_punk_v="#401a23"
+    c_punk_v="#ffffff"
     c_orange_m="#fcA311"
     c_green_m="#35ce8d"
     c_cyan_m="#77cbb9"
@@ -40,7 +39,7 @@ main() {
   fi
 
   if [[ "$bg_transparent" == "on" ]]; then
-    tmux set -g status-bg default
+    c_base="default"
   fi
 
   tmux set -g status-fg "$c_text_m"
