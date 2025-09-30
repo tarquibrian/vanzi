@@ -4,10 +4,6 @@ export VANZI_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 bg_transparent="$(tmux show-option -gqv "@bg_transparent")"
 
-if [ -z "$variant" ]; then
-  variant="dark"
-fi
-
 main() {
   spacer=" "
   window_inner_spacer="."
