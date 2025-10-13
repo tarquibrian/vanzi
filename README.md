@@ -3,7 +3,16 @@
 **Vanzi Theme** is a clean and minimalist **tmux** theme featuring both **light** and **dark** variants, optional **transparency**, and an **active pane border highlight**.  
 It’s designed for a modern and balanced look across terminals, whether opaque or with a blurred background.
 
----
+## 🖼️ Preview
+
+> Vanzi (dark theme)
+>
+> ![Vanzi Tmux Theme Preview](./assets/vanzi-dark.png)  
+
+> Ivory (light theme)
+>
+> ![Vanzi Tmux Theme Preview](./assets/ivory-light.png)  
+
 
 ## ✨ Features
 
@@ -16,7 +25,6 @@ It’s designed for a modern and balanced look across terminals, whether opaque 
 - 🪟 Consistent colors for windows, panes, and messages  
 - 🕒 Displays current time and date on the status bar  
 
----
 
 ## 📦 Installation
 
@@ -43,7 +51,6 @@ It’s designed for a modern and balanced look across terminals, whether opaque 
    ```
    (Default `prefix` is `Ctrl + b`)
 
----
 
 ## ⚙️ Configuration
 
@@ -54,6 +61,8 @@ You can customize the theme through the following tmux options:
 | `@theme_variant` | `ivory` \| `vanzi` | Select light or dark variant |
 | `@bg_transparency` | `on` \| `off` | Enable or disable transparent background |
 | `@active_border` | `on` \| `off` | Enable a highlighted border on the active pane |
+
+
 
 ### 🧩 Example Configuration
 
@@ -72,7 +81,6 @@ set -g @active_border "on"
 run-shell "~/.tmux/plugins/vanzi-tmux-theme/vanzi.tmux"
 ```
 
----
 
 ## 🪄 Quick Reload
 
@@ -82,7 +90,6 @@ If you make any configuration changes, reload tmux without restarting:
 tmux source ~/.config/tmux/tmux.conf
 ```
 
----
 
 ## 🧠 Internal Variables
 
@@ -93,7 +100,7 @@ tmux source ~/.config/tmux/tmux.conf
 | `c_punk_main`, `c_punk_v` | Accent colors |
 | `c_border_l`, `c_border_m`, `c_border_h` | Border color levels |
 
----
+
 
 ## 🧩 Repository Structure
 
@@ -103,22 +110,10 @@ vanzi-tmux-theme/
 ├── README.md     # English documentation
 ```
 
----
-
-## 🖼️ Preview
-
-> Vanzi (dark theme)
->
-> ![Vanzi Tmux Theme Preview](./assets/vanzi-dark.png)  
-
-> Ivory (light theme)
->
-> ![Vanzi Tmux Theme Preview](./assets/ivory-light.png)  
----
 
 ## 🧑‍💻 Author
 
 **Brian Tarqui**  
-Designer and developer of minimalist tools and tmux themes.  
-🌐 [github.com/briantarqui](https://github.com/briantarqui)
+Designer and developer.  
+🌐 [github.com/tarquibrian](https://github.com/tarquibrian)
 
