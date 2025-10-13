@@ -107,11 +107,11 @@ vanzi-tmux-theme/
 
 ## 🖼️ Preview
 
-> ![Vanzi Tmux Theme Preview](./assets/ivory-light.png)  
-
+> - Vanzi (dark theme)
 > ![Vanzi Tmux Theme Preview](./assets/vanzi-dark.png)  
 
-
+> - Ivory (light theme)
+> ![Vanzi Tmux Theme Preview](./assets/ivory-light.png)  
 ---
 
 ## 🧑‍💻 Author
