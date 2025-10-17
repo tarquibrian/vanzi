@@ -1,29 +1,30 @@
 # 🌈 Vanzi Tmux Theme
 
-**Vanzi Theme** is a clean and minimalist **tmux** theme featuring both **light** and **dark** variants, optional **transparency**, and an **active pane border highlight**.  
+**Vanzi Theme** is a clean and minimalist **tmux** theme featuring both **light** and **dark** variants, optional **transparency**, and an **active pane border highlight**.
 It’s designed for a modern and balanced look across terminals, whether opaque or with a blurred background.
 
 ## 🖼️ Preview
 
 > Vanzi (dark theme)
 >
-> ![Vanzi Tmux Theme Preview](./assets/vanzi-dark.png)  
+> ![Vanzi Tmux Theme Preview](./assets/vanzi-dark.png)
 
 > Ivory (light theme)
 >
-> ![Vanzi Tmux Theme Preview](./assets/ivory-light.png)  
+> ![Vanzi Tmux Theme Preview](./assets/ivory-light.png)
 
 
 ## ✨ Features
 
 - 🎨 Two color variants:
-  - `ivory` → light theme  
-  - `vanzi` → dark theme  
-- 🧊 Optional background transparency  
-- 🔲 Highlighted active pane border  
-- 🪶 Minimal and elegant status bar  
-- 🪟 Consistent colors for windows, panes, and messages  
-- 🕒 Displays current time and date on the status bar  
+  - `ivory` → light theme
+  - `vanzi` → dark theme
+- 🧊 Optional background transparency
+- 🔲 Highlighted active pane border
+- 🪶 Minimal and elegant status bar
+- 🪟 Consistent colors for windows, panes, and messages
+- 🕒 Displays current time and date on the status bar
+- 🔍 Zoom indicator showing when a pane is zoomed
 
 
 ## 📦 Installation
@@ -61,6 +62,7 @@ You can customize the theme through the following tmux options:
 | `@theme_variant` | `ivory` \| `vanzi` | Select light or dark variant |
 | `@bg_transparency` | `on` \| `off` | Enable or disable transparent background |
 | `@active_border` | `on` \| `off` | Enable a highlighted border on the active pane |
+| `@vanzi_zoom_icon` | `on` \| `off` | Use icon (󰍉) for zoom indicator, otherwise uses text (*Z) |
 
 
 
@@ -77,6 +79,9 @@ set -g @bg_transparency "on"
 
 # Highlight the active pane border
 set -g @active_border "on"
+
+# Use icon for zoom indicator (default is text *Z)
+set -g @vanzi_zoom_icon "on"
 
 run-shell "~/.tmux/plugins/vanzi-tmux-theme/vanzi.tmux"
 ```
@@ -113,7 +118,7 @@ vanzi-tmux-theme/
 
 ## 🧑‍💻 Author
 
-**Brian Tarqui**  
-Designer and developer.  
+**Brian Tarqui**
+Designer and developer.
 🌐 [github.com/tarquibrian](https://github.com/tarquibrian)
 
