@@ -20,7 +20,7 @@ main() {
 
   # Set zoom indicator based on user preference
   if [[ "$zoom_icon" == "on" ]]; then
-    zoom_indicator=" "
+    zoom_indicator=" 󰍉"
   else
     zoom_indicator=" *Z"
   fi
