@@ -16,6 +16,14 @@ main() {
   variant="$(tmux show-option -gqv "@theme_variant")"
   bg_transparency="$(tmux show-option -gqv "@bg_transparency")"
   active_border="$(tmux show-option -gqv "@active_border")"
+  zoom_icon="$(tmux show-option -gqv "@vanzi_zoom_icon")"
+
+  # Set zoom indicator based on user preference
+  if [[ "$zoom_icon" == "on" ]]; then
+    zoom_indicator=" "
+  else
+    zoom_indicator=" *Z"
+  fi
 
   if [[ "$variant" == "ivory" ]]; then
 
@@ -78,8 +86,8 @@ main() {
   # Format
   set status-left "$padding#[fg=$c_text_l]󰉖 #[fg=$c_text_h]#S#[fg=$c_text_m]  $padding"
   set status-right "#[fg=$c_text_l]  %H:%M #[fg=$c_text_l]  %Y-%m-%d"
-  setw window-status-format "$padding#[]#I#[]$window_inner_separator#[]#W$padding"
-  setw window-status-current-format "$padding#[]#I#[]$window_inner_separator#[]#W$padding"
+  setw window-status-format "$padding#[]#I#[]$window_inner_separator#[]#W#{?window_zoomed_flag,$zoom_indicator,}$padding"
+  setw window-status-current-format "$padding#[]#I#[]$window_inner_separator#[]#W#{?window_zoomed_flag,$zoom_indicator,}$padding"
 }
 
 main "$@"
