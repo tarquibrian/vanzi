@@ -78,7 +78,7 @@ set -g @bg_transparency "on"
 # Highlight the active pane border
 set -g @active_border "on"
 
-run-shell "~/.tmux/plugins/vanzi-tmux-theme/vanzi.tmux"
+run-shell "~/.tmux/plugins/vanzi-tmux-theme/vanzi-theme.tmux"
 ```
 
 
